@@ -1,3 +1,52 @@
+body {
+  background-color: #ff7800;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .1rem;
+  padding: 0 20px; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  width: 800px;
+  height: 800px;
+  margin-top: 30px; }
+  .content header h1 {
+    margin: 20px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem; }
+    .content header h1 span {
+      color: white; }
+
+.gameboard {
+  background-color: red;
+  height: 600px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); }
+  .gameboard table {
+    width: 100%;
+    border-spacing: 0; }
+    .gameboard table tr {
+      height: 60px; }
+    .gameboard table .color1 {
+      background-color: #0c1830; }
+    .gameboard table .color2 {
+      background-color: #323264; }
+    .gameboard table .color3 {
+      background-color: pink; }
+    .gameboard table .color4 {
+      background-color: purple; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; }
+  footer form input {
+    padding: 15px 30px; }
 
 /*# sourceMappingURL=styles.css.map */
