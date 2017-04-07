@@ -9,7 +9,8 @@ $(document).ready(function(){
     [1,3,3],
     [2,4,4],
     [1,8,5],
-    [2,6,2]
+    [2,6,2],
+    [1,105,92]
   ];
 
   $('#roll').click(function(){
@@ -20,7 +21,7 @@ $(document).ready(function(){
     var diceNumber = moves[turn][2];
     $(cellNumber + " " + playerNumber).css("display", "block");
 
-    document.querySelector('#current-dice-roll p').innerHTML = "You rolled a ";
+    document.querySelector('#current-dice-roll p').innerHTML = "Player " + moves[turn][0] + ", <br>you rolled a ";
     document.querySelector('#current-dice-roll h1').innerHTML = diceNumber;
 
     var lastTurn = turn - 2;
@@ -29,13 +30,16 @@ $(document).ready(function(){
     var lastDiceNumber = moves[lastTurn][2];
     $(lastCellNumber + " " + lastPlayerNumber).css("display", "none");
 
+    if (cellNumber == "#n100" || cellNumber == "#n101" || cellNumber == "#n102" || cellNumber == "#n103" || cellNumber == "#n104" || cellNumber == "#n105") {
+      console.log("test");
+      $("#n100" + " " + playerNumber).css("display", "block");
+      setTimeout(function(){
+        window.location.href = "http://www.google.com";
+      }, 2000);
+
+    };
+
   });
-
-
-  if () {
-
-  }
-
 
 
 });
