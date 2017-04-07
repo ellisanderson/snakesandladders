@@ -2,12 +2,7 @@
 @import "partials/_mixins.scss";
 
 body{
-  background-color: rgba(255, 120,0,1);
-  // background: red; /* For browsers that do not support gradients */
-  // background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
-  // background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
-  // background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
-  // background: linear-gradient(to bottom right, red, yellow); /* Standard syntax */
+  background-color: #222;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -22,22 +17,40 @@ body{
 }
 
 .content{
-  width:800px;
-  height:800px;
+  width:300px;
+  height:400px;
   margin-top:30px;
+  position:relative;
 
   header{
+    transform: skewX(-15deg);
+    text-align: center;
 
-    h1{
-      margin:20px auto;
-      text-align: center;
+    h1 {
       text-transform: uppercase;
-      font-size:4rem;
+      display: inline-block;
+      margin: 20px 0 ;
+      font-size: 1.3rem;
+      background-image: -webkit-linear-gradient(orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:relative;
+    }
 
+    h1:after {
+      background: none;
+      content: attr(data-text);
+      left: 0;
+      position: absolute;
+      text-shadow: 5px 5px 0px #000;
+      top: 0;
+      z-index: -1;
+    }
 
-      span{
-        color:white;
-      }
+    span{
+      background-image: -webkit-linear-gradient(#fff, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
@@ -45,55 +58,104 @@ body{
 // GAMERBOARD__________________________________
 
 .gameboard{
-  background-color: red;
-  height:600px;
+  // height:300px;
   box-shadow: 10px 10px 30px rgba(0,0,0,.3);
 
   table{
-    width: 100%;
+    width: 300px;
     border-spacing: 0;
+    counter-reset: cellsNumber;
 
     tr{
-      height:60px;
+      height:30px;
 
       th{
-        // border:1px solid rgba(0,0,0,.5);
+        width:40px;
       }
     }
 
-    .color1{
-      background-color: rgba(12,24,48,1);
-    }
-
-    .color2{
-      background-color: rgba(50,50,100,1);
-    }
-
-    .color3{
-      background-color: pink;
-    }
-
-    .color4{
-      background-color: purple;
-    }
   }
+
+  .color1{
+    background-color: #ddd;
+  }
+
+  .color2{
+    background-color: #4F5E67;
+  }
+
+  .color3{
+    background-color: #6B7E8B;
+  }
+
+  .color4{
+    background-color: #CCD8E2;
+  }
+
+  .color5{
+    background-color: #44444f;
+  }
+
+  .color6{
+    background-color: #666;
+  }
+
 }
 
 
 
 // FOOTER___________________________________
 
-footer{
+.play{
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height:150px;
+  position: absolute;
+  bottom: -90px;
+}
 
-  form{
+input{
+  height:100px;
+  width:100px;
+  background-color: orange;
+  border-radius: 50%;
+  outline:none;
+  font-size: 2rem;
+  font-family: inherit;
+   -webkit-text-stroke: 1px rgba(255,255,255,.5);
+}
 
-    input{
-      padding:15px 30px;
 
+
+
+
+
+
+
+// MEDIA QUERIES__________________________________________________
+
+@media (min-width:767px) {
+  .content{
+    width:600px;
+    height:800px;
+
+    header{
+      h1{
+        font-size:3rem;
+      }
+    }
+
+    .gameboard{
+
+      table{
+        width: 600px;
+        height:600px;
+      }
+    }
+
+    .play{
+      bottom:-30px;
     }
   }
 }

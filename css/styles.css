@@ -1,5 +1,5 @@
 body {
-  background-color: #ff7800;
+  background-color: #222;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -12,41 +12,86 @@ body {
   padding: 0; }
 
 .content {
-  width: 800px;
-  height: 800px;
-  margin-top: 30px; }
-  .content header h1 {
-    margin: 20px auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4rem; }
-    .content header h1 span {
-      color: white; }
+  width: 300px;
+  height: 400px;
+  margin-top: 30px;
+  position: relative; }
+  .content header {
+    transform: skewX(-15deg);
+    text-align: center; }
+    .content header h1 {
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 1.3rem;
+      background-image: -webkit-linear-gradient(orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative; }
+    .content header h1:after {
+      background: none;
+      content: attr(data-text);
+      left: 0;
+      position: absolute;
+      text-shadow: 5px 5px 0px #000;
+      top: 0;
+      z-index: -1; }
+    .content header span {
+      background-image: -webkit-linear-gradient(#fff, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 .gameboard {
-  background-color: red;
-  height: 600px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); }
   .gameboard table {
-    width: 100%;
-    border-spacing: 0; }
+    width: 300px;
+    border-spacing: 0;
+    counter-reset: cellsNumber; }
     .gameboard table tr {
-      height: 60px; }
-    .gameboard table .color1 {
-      background-color: #0c1830; }
-    .gameboard table .color2 {
-      background-color: #323264; }
-    .gameboard table .color3 {
-      background-color: pink; }
-    .gameboard table .color4 {
-      background-color: purple; }
+      height: 30px; }
+      .gameboard table tr th {
+        width: 40px; }
+  .gameboard .color1 {
+    background-color: #ddd; }
+  .gameboard .color2 {
+    background-color: #4F5E67; }
+  .gameboard .color3 {
+    background-color: #6B7E8B; }
+  .gameboard .color4 {
+    background-color: #CCD8E2; }
+  .gameboard .color5 {
+    background-color: #44444f; }
+  .gameboard .color6 {
+    background-color: #666; }
 
-footer {
+.play {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px; }
-  footer form input {
-    padding: 15px 30px; }
+  position: absolute;
+  bottom: -90px; }
+
+input {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  outline: none;
+  font-size: 2rem;
+  font-family: inherit;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); }
+
+@media (min-width: 767px) {
+  .content {
+    width: 600px;
+    height: 800px; }
+    .content header h1 {
+      font-size: 3rem; }
+    .content .gameboard table {
+      width: 600px;
+      height: 600px; }
+    .content .play {
+      bottom: -30px; } }
 
 /*# sourceMappingURL=styles.css.map */
