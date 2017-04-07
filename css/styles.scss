@@ -70,8 +70,8 @@ body{
     tr{
       height:30px;
 
-      th{
-        width:40px;
+      td{
+        width:30px;        
       }
     }
 
@@ -156,6 +156,13 @@ input{
       table{
         width: 600px;
         height:600px;
+
+        tr{
+
+          td{
+            width:60px;
+          }
+        }
       }
     }
 

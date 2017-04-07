@@ -50,8 +50,8 @@ body {
     counter-reset: cellsNumber; }
     .gameboard table tr {
       height: 30px; }
-      .gameboard table tr th {
-        width: 40px; }
+      .gameboard table tr td {
+        width: 30px; }
   .gameboard .color1 {
     background-color: #ddd; }
   .gameboard .color2 {
@@ -94,6 +94,8 @@ input {
     .content .gameboard table {
       width: 600px;
       height: 600px; }
+      .content .gameboard table tr td {
+        width: 60px; }
     .content .play {
       bottom: -30px; } }
 
