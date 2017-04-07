@@ -139,6 +139,7 @@ body{
     left:30%;
     transform: rotate(0deg) scaleX(-1);
     width: 50%;
+    z-index: 10000;
   }
 
   #snake2{
@@ -148,6 +149,7 @@ body{
     right:-3%;
     transform: rotate(270deg) scaleX(1);
     width: 35%;
+    z-index: 10000;
   }
 
   #snake3{
@@ -157,6 +159,7 @@ body{
     right:0%;
     transform: rotate(310deg) scaleX(1);
     width: 95%;
+    z-index: 10000;
   }
 
   #snake4{
@@ -166,6 +169,7 @@ body{
     right:-2%;
     transform: rotate(45deg) scaleX(-1);
     width: 58%;
+    z-index: 10000;
   }
 
   #snake5{
@@ -175,6 +179,7 @@ body{
     left:10%;
     transform: rotate(-45deg) scaleX(1);
     width: 30%;
+    z-index: 10000;
   }
 
   #snake6{
@@ -184,6 +189,7 @@ body{
     left:-5%;
     transform: rotate(90deg) scaleX(-1);
     width: 40%;
+    z-index: 10000;
   }
 
   #snake7{
@@ -193,6 +199,7 @@ body{
     left:0%;
     transform: rotate(-35deg) scaleX(1);
     width: 42%;
+    z-index: 10000;
   }
 
 

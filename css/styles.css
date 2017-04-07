@@ -92,49 +92,56 @@ body {
     bottom: 6%;
     left: 30%;
     transform: rotate(0deg) scaleX(-1);
-    width: 50%; }
+    width: 50%;
+    z-index: 10000; }
   .gameboard #snake2 {
     opacity: .7;
     position: absolute;
     bottom: 35%;
     right: -3%;
     transform: rotate(270deg) scaleX(1);
-    width: 35%; }
+    width: 35%;
+    z-index: 10000; }
   .gameboard #snake3 {
     opacity: .7;
     position: absolute;
     top: 38%;
     right: 0%;
     transform: rotate(310deg) scaleX(1);
-    width: 95%; }
+    width: 95%;
+    z-index: 10000; }
   .gameboard #snake4 {
     opacity: .7;
     position: absolute;
     top: 18%;
     right: -2%;
     transform: rotate(45deg) scaleX(-1);
-    width: 58%; }
+    width: 58%;
+    z-index: 10000; }
   .gameboard #snake5 {
     opacity: .7;
     position: absolute;
     top: 12%;
     left: 10%;
     transform: rotate(-45deg) scaleX(1);
-    width: 30%; }
+    width: 30%;
+    z-index: 10000; }
   .gameboard #snake6 {
     opacity: .7;
     position: absolute;
     top: 50%;
     left: -5%;
     transform: rotate(90deg) scaleX(-1);
-    width: 40%; }
+    width: 40%;
+    z-index: 10000; }
   .gameboard #snake7 {
     opacity: .7;
     position: absolute;
     bottom: 37%;
     left: 0%;
     transform: rotate(-35deg) scaleX(1);
-    width: 42%; }
+    width: 42%;
+    z-index: 10000; }
   .gameboard .player1 {
     height: 30%;
     width: 30%;
