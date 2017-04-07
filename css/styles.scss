@@ -2,13 +2,14 @@
 @import "partials/_mixins.scss";
 
 body{
-  background-color: #222;
+  background-image: linear-gradient(black, #fa3600);
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   font-family:'Anton', sans-serif;
   letter-spacing: .1rem;
   padding:0 20px;
+  height: 100vh;
 }
 
 *{
@@ -98,6 +99,10 @@ body{
 
   .color6{
     background-color: #666;
+  }
+
+  .color7{
+    background:red;
   }
 
 }

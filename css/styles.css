@@ -1,11 +1,12 @@
 body {
-  background-color: #222;
+  background-image: linear-gradient(black, #fa3600);
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   font-family: 'Anton', sans-serif;
   letter-spacing: .1rem;
-  padding: 0 20px; }
+  padding: 0 20px;
+  height: 100vh; }
 
 * {
   margin: 0;
@@ -63,6 +64,8 @@ body {
     background-color: #44444f; }
   .gameboard .color6 {
     background-color: #666; }
+  .gameboard .color7 {
+    background: red; }
 
 .play {
   width: 100%;
