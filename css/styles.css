@@ -1,12 +1,13 @@
 body {
+  background-color: #fa3600;
   background-image: linear-gradient(black, #fa3600);
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
   font-family: 'Anton', sans-serif;
   letter-spacing: .1rem;
-  padding: 0 20px;
-  height: 100vh; }
+  padding: 0 20px; }
 
 * {
   margin: 0;
